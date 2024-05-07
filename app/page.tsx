@@ -7,6 +7,8 @@ import { Alegreya_Sans_SC, Noto_Naskh_Arabic } from "next/font/google";
 import Panel1 from "./components/Panel1";
 import Panel2 from './components/Panel2';
 import Panel3 from "./components/Panel3";
+import Panel4 from "./components/Panel4";
+import Panel5 from "./components/Panel5";
 const inter = Alegreya_Sans_SC({ subsets: ["latin"], weight: ["300"] });
 const arab = Noto_Naskh_Arabic({ subsets: ["latin"], weight: ["400"] });
 
@@ -18,8 +20,14 @@ export default function Home() {
         style={{ maxWidth: "500px" }}
       >
         <Panel1/>
+        <div className="w-full bg-green-950 text-green-950">-</div>
         <Panel2/>
+        <div className="w-full bg-green-950 text-green-950">-</div>
         <Panel3/>
+        <div className="w-full bg-green-950 text-green-950">-</div>
+        <Panel4/>
+        <div className="w-full bg-green-950 text-green-950">-</div>
+        <Panel5/>
         {/* <Image src="/images/plant1.png" alt="alt" width={500} height={500} /> */}
       </div>
     </main>
