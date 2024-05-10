@@ -9,6 +9,7 @@ import Panel2 from './components/Panel2';
 import Panel3 from "./components/Panel3";
 import Panel4 from "./components/Panel4";
 import Panel5 from "./components/Panel5";
+import Page1 from "./components/Page1";
 const inter = Alegreya_Sans_SC({ subsets: ["latin"], weight: ["300"] });
 const arab = Noto_Naskh_Arabic({ subsets: ["latin"], weight: ["400"] });
 
@@ -19,7 +20,7 @@ export default function Home() {
         className="flex flex-col items-center justify-between text-slate-800 bg-white "
         style={{ maxWidth: "500px" }}
       >
-        <Panel1/>
+        {/* <Panel1/>
         <div className="w-full bg-green-950 text-green-950">-</div>
         <Panel2/>
         <div className="w-full bg-green-950 text-green-950">-</div>
@@ -27,8 +28,9 @@ export default function Home() {
         <div className="w-full bg-green-950 text-green-950">-</div>
         <Panel4/>
         <div className="w-full bg-green-950 text-green-950">-</div>
-        <Panel5/>
-        {/* <Image src="/images/plant1.png" alt="alt" width={500} height={500} /> */}
+        <Panel5/> */}
+
+        <Page1/>
       </div>
     </main>
   );

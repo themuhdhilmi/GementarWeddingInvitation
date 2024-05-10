@@ -1,6 +1,5 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { MdKeyboardDoubleArrowDown } from "react-icons/md";
 import Image from "next/image";
 
 import { Satisfy, Shantell_Sans, Caveat_Brush } from "next/font/google";
@@ -46,7 +45,7 @@ const Panel5 = (props: any) => {
       />
       <div className="px-3 z-50">
         <p className={"text-center pt-20  text-4xl pb-5 " + satisfy.className}>
-          Untuk Dihubungi 
+          Untuk Dihubungi
         </p>
 
         <p className={"text-center  text-lg pb-5 " + shantell_Sans.className}>
@@ -165,7 +164,7 @@ const Panel5 = (props: any) => {
       </div>
 
       <div className="animate-bounce pt-20 w-full flex flex-row justify-center">
-        <MdKeyboardDoubleArrowDown />
+        {/* <MdKeyboardDoubleArrowDown /> */}
       </div>
     </div>
   );

@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Inter, Great_Vibes } from "next/font/google";
+import { Inter, Great_Vibes, Roboto_Condensed } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const great_Vibes = Great_Vibes({ weight : ['400'], subsets : ["latin"] });
+const great_Vibes = Roboto_Condensed({ weight : ['400'], subsets : ["latin"] });
 
 export const metadata: Metadata = {
   title: "Shahida & Hilmi Wedding Invitation",
