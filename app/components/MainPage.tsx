@@ -1,17 +1,17 @@
-"use effect";
+"use client";
 import React, { useState } from "react";
 import { MdKeyboardDoubleArrowDown } from "react-icons/md";
 
 import { Gwendolyn } from "next/font/google";
 const gwendolyn = Gwendolyn({ subsets: ["latin"], weight: ["700"] });
-const Page1 = (props: any) => {
+const MainPage = (props: any) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div
-      className={`transition ${
+      className={`fixed max-w-96 w-full z-50 ${
         isOpen ? "transform -translate-y-full duration-1000" : ""
-      }  min-h-screen grid  grid-cols-1 w-full bg-cover min-w-96 bg-center bg-no-repeat bg-[url('https://kadkahwinmy.com/images/upload/design/1712139136_e.png')] content-center relative`}
+      }  min-h-screen bg-cover bg-center bg-[url('https://kadkahwinmy.com/images/upload/design/1712139136_e.png')] content-center `}
     >
       <div className="pt-15 z-50 ">
         <div className="flex w-full flex-row justify-center mb-3">
@@ -53,7 +53,7 @@ const Page1 = (props: any) => {
         </div>
 
         <div className="flex w-full flex-row justify-center mb-3">
-          <p className={"text-center great-vibes-regular w-fit  px-2 "}>
+          <p className={"text-center great-vibes-regular w-fit px-2 "}>
             SABTU, 10 JUN 2024
           </p>
         </div>
@@ -71,8 +71,10 @@ const Page1 = (props: any) => {
           BUKA
         </button>
       </div>
+
+
     </div>
   );
 };
 
-export default Page1;
+export default MainPage;

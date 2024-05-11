@@ -13,6 +13,7 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "main-bg": "url('https://kadkahwinmy.com/images/upload/design/1712139136_e.png')",
+        "back-bg": "url('https://kadkahwinmy.com/images/upload/bg/1712139136_d.png')",
       },
     },
   },
