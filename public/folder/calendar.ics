@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ical.marudot.com//iCal Event Maker
+CALSCALE:GREGORIAN
+BEGIN:VTIMEZONE
+TZID:Asia/Singapore
+LAST-MODIFIED:20231222T233358Z
+TZURL:https://www.tzurl.org/zoneinfo-outlook/Asia/Singapore
+X-LIC-LOCATION:Asia/Singapore
+BEGIN:STANDARD
+TZNAME:+08
+TZOFFSETFROM:+0800
+TZOFFSETTO:+0800
+DTSTART:19700101T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20240511T093203Z
+UID:1715419878895-44435@ical.marudot.com
+DTSTART;TZID=Asia/Singapore:20240720T110000
+DTEND;TZID=Asia/Singapore:20240720T160000
+SUMMARY:Wedding Invitation Shahida & Hilmi
+LOCATION:Kamalinda Events & Weddings @ Level UG\, Utropolis Marketplace\, Jalan Kontraktor U1/14\, Hicom-glenmarie Industrial Park\, 40150 Shah Alam\, Selangor
+END:VEVENT
+END:VCALENDAR

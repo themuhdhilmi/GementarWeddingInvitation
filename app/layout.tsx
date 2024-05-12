@@ -9,6 +9,9 @@ const great_Vibes = Roboto_Condensed({ weight : ['400'], subsets : ["latin"] });
 export const metadata: Metadata = {
   title: "Shahida & Hilmi Wedding Invitation",
   description: "Shahida & Hilmi Wedding Invitation",
+  icons: {
+    icon: '/icon.ico'
+  }
 };
 
 export default function RootLayout({
@@ -18,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${great_Vibes.className} `}>{children}</body>
+      <body className={`${great_Vibes.className} overflow-hidden body-custom`}>{children}</body>
     </html>
   );
 }

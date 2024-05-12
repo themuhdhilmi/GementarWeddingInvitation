@@ -7,8 +7,10 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Ucapan {
-  id                String  @id @default(cuid())
-  name String
-  text String
+model Submission {
+  id              String  @id
+  name            String
+  text            String
+  isHadir         Boolean
+  jumlahKehadiran Int
 }
