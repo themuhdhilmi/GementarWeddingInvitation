@@ -32,6 +32,22 @@ const MainPage = (props: any) => {
     };
   }, []);
 
+  if(isLoading)
+  {
+    return (
+      <div className="fixed top-0 left-0 w-full h-full z-50 bg-white">
+      <div className="hero min-h-screen">
+        <div className="hero-content text-center">
+          <div>
+            Muat Turun...{" "}
+            <Spinner aria-label="Extra large spinner example " size="xl" />
+          </div>
+        </div>
+      </div>
+    </div>
+    )
+  }
+
   return (
     <div
       className={`fixed max-w-96 w-full z-50 ${
@@ -94,16 +110,8 @@ const MainPage = (props: any) => {
               document.body.classList.remove("overflow-hidden");
             }}
             className="btn bg-[#ab787d] text-white font-semibold rounded-lg py-2 px-3"
-            disabled={isLoading}
           >
-            {isLoading ? (
-              <div>
-                Muat Turun...{" "}
-                <Spinner aria-label="Small spinner example" size="sm" />
-              </div>
-            ) : (
-              "BUKA"
-            )}
+            BUKA
           </button>
         </div>
       </div>

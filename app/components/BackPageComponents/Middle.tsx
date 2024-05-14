@@ -27,8 +27,7 @@ const Middle = (props: any) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-
-  const datafiltered = data?.ucapan?.filter((item : any) => item.text !== "")
+  const datafiltered = data?.ucapan?.filter((item: any) => item.text !== "");
 
   return (
     <div
@@ -169,6 +168,25 @@ const Middle = (props: any) => {
 
       <div className="px-10">
         <CountDown />
+      </div>
+
+      <div className="flex w-full flex-row justify-center mb-3 pt-5">
+        <p className={"text-center text-xs w-fit px-2 "}>
+          بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ
+        </p>
+      </div>
+
+      <div className="flex w-full flex-row justify-center mb-3 ">
+        <p className={"text-center text-xs w-fit px-2 "}>
+          &quot;Ya Allah, 
+          Berkatilah majlis jadikanlah pasangan ini bahagia dan berkekalan hingga ke akhir hayat dan kurniakanlah kepada mereka zuriat yang sempurna, 
+          beriman dan beramal soleh. 
+          Sesungguhnya Engkau Maha Berkuasa atas segala sesuatu.&quot;
+        </p>
+      </div>
+
+      <div className="flex w-full flex-row justify-center mb-3 pb-5">
+        <p className={"text-center text-xs w-fit px-2 "}>آمين يا رب العالمين</p>
       </div>
 
       <div className="flex flex-row w-full justify-center">
