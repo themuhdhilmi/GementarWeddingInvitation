@@ -1,4 +1,7 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# .env
+# /.env - this ignore need to be disabled
+/prisma/migrations
 
 # dependencies
 /node_modules
@@ -13,11 +16,11 @@
 /.next/
 /out/
 
-.env
-
 # production
 /build
 
+/.env 
+.env
 # misc
 .DS_Store
 *.pem
@@ -28,7 +31,8 @@ yarn-debug.log*
 yarn-error.log*
 
 # local env files
-.env*.local
+#.env*.local
+#.env
 
 # vercel
 .vercel
@@ -36,3 +40,20 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+node_modules/
+yarn-error.log/
+vendor/
+tmp/
+dist/
+.idea
+tmp-resolvers
+flow-typed
+javascript/**/migrations/
+typescript/**/migrations/
+misc/**/migrations/
+databases/**/migrations/
+experimental/**/*.db
+.next
+.vscode/
+.nuxt
+dev.db
