@@ -130,6 +130,10 @@ const Middle = (props: any) => {
         <div className={"text-center w-full px-2 text-xs pt-2"}>
           Sila RSVP kehadiran anda sebelum 10 July 2024
         </div>
+
+        <div className={"text-center w-full px-2 text-xs pt-2"}>
+          tema warna: matcha green
+        </div>
       </div>
 
       <div className="flex flex-row w-full justify-center">
