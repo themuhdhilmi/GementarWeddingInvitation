@@ -131,8 +131,8 @@ const Middle = (props: any) => {
           Sila RSVP kehadiran anda sebelum 10 July 2024
         </div>
 
-        <div className={"text-center w-full px-2 text-xs pt-2"}>
-          tema warna: matcha green
+        <div className={"text-center w-full px-2 text-sm pt-2 font-bold text-[#345f32]"}>
+          Tema warna: matcha green
         </div>
       </div>
 
