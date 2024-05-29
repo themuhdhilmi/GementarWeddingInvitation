@@ -11,6 +11,7 @@ import { Carousel } from "flowbite-react";
 import CountDown from "./CountDown";
 import { buttonAt } from "../BackPage";
 import { useGetUcapan } from "@/app/utilities/useGetUcapan";
+import RSVP2 from "../BottomPanelComponents/RSVP2";
 const domine = Domine({ subsets: ["latin"], weight: ["400"] });
 const parisienne = Parisienne({ subsets: ["latin"], weight: ["400"] });
 const geologica = Geologica({ subsets: ["latin"], weight: ["400"] });
@@ -134,6 +135,11 @@ const Middle = (props: any) => {
         <div className={"text-center w-full px-2 text-sm py-2 mt-2 font-bold text-slate-200 bg-[#85a987]"}>
           WARNA TEMA : MATCHA GREEN
         </div>
+
+        <div className="flex flex-row justify-center pt-4">
+        <RSVP2/>
+        </div>
+
       </div>
 
       <div className="flex flex-row w-full justify-center">
