@@ -27,7 +27,8 @@ const Page = () => {
           <th className="border">Id</th>
           <th className="border">Text</th>
           <th className="border">Kehadiran</th>
-          <th className="border">Jumlah Hadir</th>
+          <th className="border">Hadir Dewasa</th>
+          <th className="border">Hadir Kanak-Kanak</th>
         </tr>
         {datafiltered?.map((item: any, index: number) => {
           return (
@@ -44,7 +45,8 @@ const Page = () => {
               >
                 {item.isHadir ? "Hadir" : "Tidak Hadir"}
               </td>
-              <td className="border">{item.jumlahKehadiran}</td>
+              <td className="border">{item.kehadiranDewasa}</td>
+              <td className="border">{item.kehadiranKanak}</td>
             </tr>
           );
         })}
@@ -63,7 +65,8 @@ const Page = () => {
               >
                 {item.isHadir ? "Hadir" : "Tidak Hadir"}
               </td>
-              <td className="border">{item.jumlahKehadiran}</td>
+              <td className="border">{item.kehadiranDewasa}</td>
+              <td className="border">{item.kehadiranKanak}</td>
             </tr>
           );
         })}
