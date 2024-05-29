@@ -150,24 +150,39 @@ const RSVP2 = (props: any) => {
 
           <div>
             <div className="mb-2 block">
-              <Label htmlFor="number" value="Bilangan Dewasa" />
+              <Label htmlFor="number" value="Bilangan Dewasa*" />
             </div>
             <TextInput id="number" type="number"  onChange={(e) => setUserCountDewasa(parseInt(e.target.value))} value={userCountDewasa} required shadow />
           </div>
 
           <div>
             <div className="mb-2 block">
-              <Label htmlFor="number" value="Bilangan Kanak-Kanak" />
+              <Label htmlFor="number" value="Bilangan Kanak-Kanak*" />
             </div>
             <TextInput id="number" type="number"  onChange={(e) => setUserCountKanakKanak(parseInt(e.target.value))} value={userCountKanakKanak} required shadow />
           </div>
 
           <div className="w-full">
             <div className="mb-2 block">
-              <Label htmlFor="comment" value="Ucapan anda (Jika ada)" />
+              <Label htmlFor="comment" value="Ucapan untuk kedua mempelai*" />
             </div>
-            <Textarea value={text} onChange={(e: any) => setText(e.target.value)} id="comment" placeholder="" rows={4} />
+            <Textarea value={text} onChange={(e: any) => setText(e.target.value)} id="comment" placeholder="" rows={4} required />
           </div>
+
+          <div className="flex w-full flex-row justify-center mb-3 pt-5">
+        <p className={"text-center text-xs w-fit px-2 "}>
+          بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ
+        </p>
+      </div>
+
+      <div className="flex w-full flex-row justify-center mb-3 ">
+        <p className={"text-center text-xs w-fit px-2 "}>
+          &quot;Ya Allah,
+          Berkatilah majlis jadikanlah pasangan ini bahagia dan berkekalan hingga ke akhir hayat dan kurniakanlah kepada mereka zuriat yang sempurna, 
+          beriman dan beramal soleh.
+          Sesungguhnya Engkau Maha Berkuasa atas segala sesuatu.&quot;
+        </p>
+      </div>
         </Modal.Body>
         <Modal.Footer>
           {success === 'SUCCESS' ? (
