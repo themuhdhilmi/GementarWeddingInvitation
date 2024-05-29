@@ -32,6 +32,9 @@ const RSVP2 = (props: any) => {
     if (name === '') {
       err += ' [Nama tidak boleh kosong]'
     }
+    if (text === '') {
+      err += ' [Ucapan tidak boleh kosong]'
+    }
 
     setError(err)
 
@@ -39,6 +42,9 @@ const RSVP2 = (props: any) => {
       return
     }
     if (name === '') {
+      return
+    }
+    if (text === '') {
       return
     }
 
