@@ -2,25 +2,13 @@
 import React, { useState, useEffect } from "react";
 import {
   Gwendolyn,
-  Domine,
-  Kings,
-  My_Soul,
-  Parisienne,
-  Playball,
-  Hammersmith_One,
-  Geologica,
-  Sorts_Mill_Goudy,
 } from "next/font/google";
-import { Carousel, Spinner } from "flowbite-react";
+import { Spinner } from "flowbite-react";
 import { MdKeyboardDoubleArrowDown } from "react-icons/md";
-import { useSearchParams } from 'next/navigation'
 const gwendolyn = Gwendolyn({ subsets: ["latin"], weight: ["700"] });
 const MainPage = (props: any) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
-
-  const searchParams = useSearchParams()
-  const bolehEdit = searchParams.get("bolehEdit")
 
   useEffect(() => {
     setIsLoading(document.readyState !== "complete");
@@ -45,22 +33,6 @@ const MainPage = (props: any) => {
           <div>
             Muat Turun...{" "}
             <Spinner aria-label="Extra large spinner example " size="xl" />
-          </div>
-        </div>
-      </div>
-    </div>
-    )
-  }
-
-  if(!bolehEdit)
-  {
-    return (
-      <div className="fixed top-0 left-0 w-full h-full z-50 bg-white">
-      <div className="hero min-h-screen">
-        <div className="hero-content text-center">
-          <div>
-            Maaf, laman sesawang sedang diselenggara.
-            {/* <Spinner aria-label="Extra large spinner example " size="xl" /> */}
           </div>
         </div>
       </div>
