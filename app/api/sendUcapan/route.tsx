@@ -40,7 +40,11 @@ export async function POST(request: NextRequest, response: NextResponse) {
 export async function GET(request: NextRequest, response: NextResponse) {
   try {
 
-    const ucapan = await prisma.submission.findMany()
+    const ucapan = await prisma.submission.findMany({
+      orderBy : {
+        type: 'asc'
+      }
+    })
 
     const totalJumlahKehadiranDewasa = await prisma.submission.aggregate({
       _sum: {
@@ -78,7 +82,6 @@ export async function GET(request: NextRequest, response: NextResponse) {
       }
     });
 
-
     const totalJumlahKehadiranTemp = (totalJumlahKehadiranDewasa._sum.kehadiranDewasa ?? 0)  + (totalJumlahKehadiranKanakKanak._sum.kehadiranKanak ?? 0)
     const totalJumlahTidakHadiranTemp = (totalJumlahTidakHadiranDewasa._sum.kehadiranDewasa ?? 0)  + (totalJumlahTidakHadiranKanakKanak._sum.kehadiranKanak ?? 0)
 
@@ -96,11 +99,60 @@ export async function GET(request: NextRequest, response: NextResponse) {
       }
     }
 
+    ////////////////////////////////////////////////
+    const totalJumlahKehadiranDewasaWanita = await prisma.submission.aggregate({
+      _sum: {
+        kehadiranDewasa: true
+      },
+      where: {
+        isHadir: true,
+        type : "WANITA"
+      }
+    });
+
+    const totalJumlahKehadiranKanakKanakWanita = await prisma.submission.aggregate({
+      _sum: {
+        kehadiranKanak: true
+      },
+      where: {
+        isHadir: true,
+        type : "WANITA"
+      }
+    });
+
+    const totalJumlahKehadiranDewasaLelaki = await prisma.submission.aggregate({
+      _sum: {
+        kehadiranDewasa: true
+      },
+      where: {
+        isHadir: true,
+        type : "LELAKI"
+      }
+    });
+
+    const totalJumlahKehadiranKanakKanakLelaki = await prisma.submission.aggregate({
+      _sum: {
+        kehadiranKanak: true
+      },
+      where: {
+        isHadir: true,
+        type : "LELAKI"
+      }
+    });
+
     return NextResponse.json(
       {
         ucapan,
         totalJumlahKehadiran,
         totalJumlahTidakHadiran,
+        totalJumlahKehadiranDewasa : totalJumlahKehadiranDewasa._sum.kehadiranDewasa,
+        totalJumlahKehadiranKanakKanak : totalJumlahKehadiranKanakKanak._sum.kehadiranKanak,
+
+        totalJumlahKehadiranDewasaWanita : totalJumlahKehadiranDewasaWanita._sum.kehadiranDewasa,
+        totalJumlahKehadiranKanakKanakWanita : totalJumlahKehadiranKanakKanakWanita._sum.kehadiranKanak,
+
+        totalJumlahKehadiranDewasaLelaki : totalJumlahKehadiranDewasaLelaki._sum.kehadiranDewasa,
+        totalJumlahKehadiranKanakKanakLelaki : totalJumlahKehadiranKanakKanakLelaki._sum.kehadiranKanak,
       },
       {
         status: 200,

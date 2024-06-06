@@ -12,10 +12,16 @@ datasource db {
 }
 
 model Submission {
-  id               String  @id
-  name             String
-  text             String
-  isHadir          Boolean
-  kehadiranDewasa Int @default(0)
-  kehadiranKanak  Int @default(0)
+  id              String  @id
+  name            String
+  text            String
+  isHadir         Boolean
+  type            Type    @default(WANITA)
+  kehadiranDewasa Int     @default(0)
+  kehadiranKanak  Int     @default(0)
+}
+
+enum Type {
+  LELAKI
+  WANITA
 }
