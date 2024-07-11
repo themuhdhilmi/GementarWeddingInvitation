@@ -197,13 +197,16 @@ const RSVP = (props: any) => {
           {success === 'SUCCESS' ? (
             ''
           ) : (
-            <Button
-              onClick={() => {
-                // setOpenModal(false);
-                handleSubmit()
-              }}
-            >
-              Hantar
+            // <Button
+            //   onClick={() => {
+            //     // setOpenModal(false);
+            //     handleSubmit()
+            //   }}
+            // >
+            //   Hantar
+            // </Button>
+            <Button>
+              Tempoh RSVP tamat
             </Button>
           )}
 
