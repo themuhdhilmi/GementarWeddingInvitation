@@ -6,12 +6,13 @@ import { FaPerson } from 'react-icons/fa6'
 import { HiInformationCircle } from 'react-icons/hi'
 import { MdOutlineTableRestaurant } from 'react-icons/md'
 import { BiChild } from 'react-icons/bi'
+import { useSendUcapanLelaki } from '@/app/utilities/useSendUcapanLelaki'
 
 const RSVP2 = (props: any) => {
   const [openModal, setOpenModal] = useState(false)
   const [userCountDewasa, setUserCountDewasa] = useState(1)
   const [userCountKanakKanak, setUserCountKanakKanak] = useState(0)
-  const { sendData, data, success } = useSendUcapan()
+  const { sendData, data, success } = useSendUcapanLelaki()
 
   const [error, setError] = useState('')
 
@@ -194,16 +195,13 @@ const RSVP2 = (props: any) => {
           {success === 'SUCCESS' ? (
             ''
           ) : (
-            // <Button
-            //   onClick={() => {
-            //     // setOpenModal(false);
-            //     handleSubmit()
-            //   }}
-            // >
-            //   Hantar
-            // </Button>
-            <Button>
-              Tempoh RSVP tamat
+            <Button
+              onClick={() => {
+                // setOpenModal(false);
+                handleSubmit()
+              }}
+            >
+              Hantar
             </Button>
           )}
 

@@ -87,7 +87,7 @@ const MainPage = (props: any) => {
 
         <div className="flex w-full flex-row justify-center mb-3">
           <p className={"text-center great-vibes-regular w-fit px-2 "}>
-            SABTU, 20 JULY 2024
+            SABTU, 28 SEPTEMBER 2024
           </p>
         </div>
 
