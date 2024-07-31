@@ -60,7 +60,7 @@ const Middle = (props: any) => {
         <div
           className={"text-center w-full px-2 " + sorts_Mill_Goudy.className}
         >
-          Shahida Binti Hashim
+          Muhammad Hilmi Bin Kamarul&apos;Azmi
         </div>
         <div
           className={"text-center w-full px-2 " + sorts_Mill_Goudy.className}
@@ -70,7 +70,7 @@ const Middle = (props: any) => {
         <div
           className={"text-center w-full px-2 " + sorts_Mill_Goudy.className}
         >
-          Muhammad Hilmi Bin Kamarul&apos;Azmi
+          Shahida Binti Hashim
         </div>
       </div>
 
@@ -105,10 +105,10 @@ const Middle = (props: any) => {
         <div
           className={"text-center w-full px-2 text-2xl " + parisienne.className}
         >
-          MIKER AVENUE, KOMPLEKS SILVERITAGE,
+          Miker Avenue, Kompleks Silveritage,
         </div>
         <div className={"text-center w-full px-2 text-xs "}>
-        JLN SULTAN NAZRIN SHAH, 31350, IPOH, PERAK.
+        Jln Sultan Nazrin Shah, 31350, Ipoh, Perak
         </div>
         <div className={"text-center w-full px-2 font-bold pt-5 "}>
           ATUR CARA MAJLIS

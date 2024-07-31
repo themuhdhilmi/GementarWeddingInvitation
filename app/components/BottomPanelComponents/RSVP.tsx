@@ -6,12 +6,13 @@ import { FaPerson } from 'react-icons/fa6'
 import { HiInformationCircle } from 'react-icons/hi'
 import { MdOutlineTableRestaurant } from 'react-icons/md'
 import { BiChild } from 'react-icons/bi'
+import { useSendUcapanLelaki } from '@/app/utilities/useSendUcapanLelaki'
 
 const RSVP = (props: any) => {
   const [openModal, setOpenModal] = useState(false)
   const [userCountDewasa, setUserCountDewasa] = useState(1)
   const [userCountKanakKanak, setUserCountKanakKanak] = useState(0)
-  const { sendData, data, success } = useSendUcapan()
+  const { sendData, data, success } = useSendUcapanLelaki()
 
   const [error, setError] = useState('')
 

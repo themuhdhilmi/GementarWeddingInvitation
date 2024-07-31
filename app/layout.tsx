@@ -7,8 +7,8 @@ const inter = Inter({ subsets: ['latin'] })
 const great_Vibes = Roboto_Condensed({ weight: ['400'], subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Shahida & Hilmi Wedding Invitation',
-  description: 'Shahida & Hilmi Wedding Invitation',
+  title: 'Hilm & Shahida Wedding Invitation',
+  description: 'Hilm & Shahida Wedding Invitation',
   icons: {
     icon: '/icon.ico',
   },

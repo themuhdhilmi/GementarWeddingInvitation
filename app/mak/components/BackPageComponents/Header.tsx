@@ -25,7 +25,7 @@ const Header = (props: any) => {
                 "text-6xl  text-center great-vibes-regular w-fit  px-2 "
               }
             >
-              Shahida
+              Hilmi
             </p>
           </div>
 
@@ -45,7 +45,7 @@ const Header = (props: any) => {
                 "text-6xl  text-center great-vibes-regular w-fit  px-2 "
               }
             >
-              Hilmi
+              Shahida
             </p>
           </div>
         </div>
