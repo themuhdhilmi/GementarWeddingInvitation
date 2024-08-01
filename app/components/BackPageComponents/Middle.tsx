@@ -60,7 +60,7 @@ const Middle = (props: any) => {
         <div
           className={"text-center w-full px-2 " + sorts_Mill_Goudy.className}
         >
-          Muhammad Hilm Bin Kamarul&apos;Azmi
+          Muhammad Hilmi Bin Kamarul&apos;Azmi
         </div>
         <div
           className={"text-center w-full px-2 " + sorts_Mill_Goudy.className}
