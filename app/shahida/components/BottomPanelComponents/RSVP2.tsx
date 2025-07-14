@@ -12,7 +12,7 @@ const RSVP2 = (props: any) => {
   const [openModal, setOpenModal] = useState(false)
   const [userCountDewasa, setUserCountDewasa] = useState(1)
   const [userCountKanakKanak, setUserCountKanakKanak] = useState(0)
-  const { sendData, data, success } = useSendUcapanLelaki()
+  const { sendData, data, success } = useSendUcapan()
 
   const [error, setError] = useState('')
 
@@ -195,16 +195,13 @@ const RSVP2 = (props: any) => {
           {success === 'SUCCESS' ? (
             ''
           ) : (
-            // <Button
-            //   onClick={() => {
-            //     // setOpenModal(false);
-            //     handleSubmit()
-            //   }}
-            // >
-            //   Hantar
-            // </Button>
-            <Button>
-              Tempoh RSVP tamat
+            <Button
+              onClick={() => {
+                // setOpenModal(false);
+                handleSubmit()
+              }}
+            >
+              Hantar
             </Button>
           )}
 

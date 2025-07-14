@@ -8,11 +8,11 @@ import { MdOutlineTableRestaurant } from 'react-icons/md'
 import { BiChild } from 'react-icons/bi'
 import { useSendUcapanLelaki } from '@/app/utilities/useSendUcapanLelaki'
 
-const RSVP2 = (props: any) => {
+const RSVP = (props: any) => {
   const [openModal, setOpenModal] = useState(false)
   const [userCountDewasa, setUserCountDewasa] = useState(1)
   const [userCountKanakKanak, setUserCountKanakKanak] = useState(0)
-  const { sendData, data, success } = useSendUcapanLelaki()
+  const { sendData, data, success } = useSendUcapan()
 
   const [error, setError] = useState('')
 
@@ -70,9 +70,12 @@ const RSVP2 = (props: any) => {
           onClick={() => {
             setOpenModal(true)
           }}
-          className={"btn bg-[#ab787d] text-white font-semibold rounded-lg py-2 px-3"}
+          className="flex flex-col justify-center text-white py-2"
         >
-            SAHKAN KEHADIRAN
+          <div className="w-full flex flex-row justify-center">
+            <MdOutlineTableRestaurant className="text-2xl" />
+          </div>
+          <p className="text-xs">RSVP</p>
         </button>
       </div>
       <Modal show={openModal} onClose={() => setOpenModal(false)}>
@@ -214,4 +217,4 @@ const RSVP2 = (props: any) => {
   )
 }
 
-export default RSVP2
+export default RSVP

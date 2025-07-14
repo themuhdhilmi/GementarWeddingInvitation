@@ -10,7 +10,7 @@ const Lokasi = () => {
         width={250}
         height={150}
       />
-      <button onClick={() => window.open('https://maps.app.goo.gl/zu3oP55CAkuE8NZM8', '_blank')} className="m-2 rounded-lg text-white shadow-lg bg-[#ab787d]">OPEN GOOGLE MAP</button>
+      <button onClick={() => window.open('https://g.co/kgs/xfBwYpf', '_blank')} className="m-2 rounded-lg text-white shadow-lg bg-[#ab787d]">OPEN GOOGLE MAP</button>
     </div>
   );
 };

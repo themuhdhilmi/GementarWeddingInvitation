@@ -3,11 +3,11 @@ import React from "react";
 import Countdown from "react-countdown";
 
 const CountDown = (props: any) => {
-  const targetDate = new Date("July 20, 2024").getTime();
+  const targetDate = new Date("September 28, 2024").getTime();
   const millisecondsRemaining = targetDate - Date.now();
 
   const renderer2 = ({ days, hours, minutes, seconds, completed }: any) => {
-    if (completed) {
+    if (false) {
       // Render a completed state
       return (
         <div className="grid grid-flow-col gap-5 text-center auto-cols-max text-xs ">

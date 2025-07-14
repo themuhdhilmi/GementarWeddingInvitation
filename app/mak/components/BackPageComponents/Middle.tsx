@@ -47,6 +47,8 @@ const Middle = (props: any) => {
         <div className={"text-center w-full px-2"}>Kamarul&apos;Azmi Bin Azman</div>
         <div className={"text-center w-full px-2 "}>&</div>
         <div className={"text-center w-full px-2 "}>Mayzaitul Mazuin Binti Ahmed Manan</div>
+        <div className={"text-center w-full px-2 "}>&</div>
+        <div className={"text-center w-full px-2 "}>Zaimah Binti Abu Bakar</div>
       </div>
 
       <div className="flex w-full flex-row justify-center mb-3 py-5">

@@ -44,9 +44,9 @@ const Middle = (props: any) => {
       </div>
 
       <div className={"w-full mb-3 text-xl leading-5 " + geologica.className}>
-        <div className={"text-center w-full px-2"}>Hashim Bin Yahaya</div>
+        <div className={"text-center w-full px-2"}>Kamarul&apos;Azmi Bin Azman</div>
         <div className={"text-center w-full px-2 "}>&</div>
-        <div className={"text-center w-full px-2 "}>Paridah Binti Johari</div>
+        <div className={"text-center w-full px-2 "}>Mayzaitul Mazuin Binti Ahmed Manan</div>
       </div>
 
       <div className="flex w-full flex-row justify-center mb-3 py-5">
@@ -60,7 +60,7 @@ const Middle = (props: any) => {
         <div
           className={"text-center w-full px-2 " + sorts_Mill_Goudy.className}
         >
-          Shahida Binti Hashim
+          Muhammad Hilmi Bin Kamarul&apos;Azmi
         </div>
         <div
           className={"text-center w-full px-2 " + sorts_Mill_Goudy.className}
@@ -70,7 +70,7 @@ const Middle = (props: any) => {
         <div
           className={"text-center w-full px-2 " + sorts_Mill_Goudy.className}
         >
-          Muhammad Hilmi Bin Kamarul&apos;Azmi
+          Shahida Binti Hashim
         </div>
       </div>
 
@@ -85,9 +85,9 @@ const Middle = (props: any) => {
 
       <div className="w-full">
         <div className={"text-center w-full px-2 font-bold"}>Sabtu</div>
-        <div className={"text-center w-full px-2 font-bold"}>20 July 2024</div>
+        <div className={"text-center w-full px-2 font-bold"}>28 September 2024</div>
         <div className={"text-center w-full px-2 text-xs"}>
-          13 Muharram 1446H
+          24 Rabi&apos; al-Awwal 1446
         </div>
       </div>
 
@@ -105,11 +105,10 @@ const Middle = (props: any) => {
         <div
           className={"text-center w-full px-2 text-2xl " + parisienne.className}
         >
-          Twilight Saga Wedding Hall @ Kamalinda Events & Weddings
+          Miker Avenue, Kompleks Silveritage,
         </div>
         <div className={"text-center w-full px-2 text-xs "}>
-          Level UG, Utropolis Marketplace, Jalan Kontraktor U1/U14, Seksyen U1
-          40150 Shah Alam Glenmarie 40150 Selangor
+        Jln Sultan Nazrin Shah, 31350, Ipoh, Perak
         </div>
         <div className={"text-center w-full px-2 font-bold pt-5 "}>
           ATUR CARA MAJLIS
@@ -118,22 +117,7 @@ const Middle = (props: any) => {
           Jamuan Makan:
         </div>
         <div className={"text-center w-full px-2 text-xs "}>
-          11:00 pagi - 4:00 petang
-        </div>
-
-        <div className={"text-center w-full px-2 text-xs pt-2"}>
-          Ketibaan Pengantin:
-        </div>
-        <div className={"text-center w-full px-2 text-xs "}>
-          12:30 tengahari
-        </div>
-
-        <div className={"text-center w-full px-2 text-xs pt-2"}>
-          Sila RSVP kehadiran anda sebelum 10 July 2024
-        </div>
-
-        <div className={"text-center w-full px-2 text-sm py-2 mt-2 font-bold text-slate-700 bg-[#e4be9d]"}>
-          WARNA TEMA LELAKI : NUDE
+          6:00 Petang - 11:00 Malam
         </div>
 
         <div className="flex flex-row justify-center pt-4">
